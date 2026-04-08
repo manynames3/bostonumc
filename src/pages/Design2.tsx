@@ -220,7 +220,7 @@ const D2Worship = () => (
             <div>
               <h4 className="text-d2-dark font-bold text-lg mb-2">주차 안내</h4>
               <p className="text-d2-brown text-sm leading-relaxed">
-                Newton North High School 맞은편에 위치하며, 약 20대의 주차 공간이 마련되어 있습니다. 편하게 오세요!
+                Newton North High School 맞은편에 위치하며, 약 20대의 주차 공간이 마련되어 있습니다.
               </p>
             </div>
           </div>
