@@ -422,7 +422,7 @@ const Design2 = () => (
     <D2Header />
     <main>
       <D2Hero />
-      <D2ChurchBuilding />
+      
       <D2About />
       <D2ScriptureBanner />
       <D2Worship />
