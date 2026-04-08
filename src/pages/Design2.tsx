@@ -37,42 +37,83 @@ const FadeIn = ({ children, className = "", delay = "" }: { children: React.Reac
   );
 };
 
+/* ───── Nav Links Data ───── */
+const navLinks = [
+  { href: "#about", label: "소개" },
+  { href: "#worship", label: "예배" },
+  { href: "#sermons", label: "설교" },
+  { href: "#contact", label: "연락처" },
+];
+
 /* ───── Header ───── */
-const D2Header = () => (
-  <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
-    <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 lg:h-24">
-      <Link to="/design2" className="flex items-center gap-3 group">
-        <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
-        <div>
-          <span className="font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
-          <span className="text-d2-brown/60 text-[11px] lg:text-xs tracking-wide hidden sm:block">Newton United Methodist Church</span>
-        </div>
-      </Link>
-      <nav className="hidden md:flex items-center gap-1.5">
-        {[
-          { href: "#about", label: "소개" },
-          { href: "#worship", label: "예배" },
-          { href: "#sermons", label: "설교" },
-          { href: "#contact", label: "연락처" },
-        ].map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            className="px-5 py-2.5 rounded-full text-sm font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all duration-200"
-          >
-            {link.label}
-          </a>
-        ))}
-        <Link
-          to="/"
-          className="ml-3 px-6 py-2.5 rounded-full text-sm font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-white transition-all duration-300"
-        >
-          Design 1
+const D2Header = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 lg:h-24">
+        <Link to="/design2" className="flex items-center gap-3 group">
+          <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
+          <div>
+            <span className="font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
+            <span className="text-d2-brown/60 text-[11px] lg:text-xs tracking-wide hidden sm:block">Newton United Methodist Church</span>
+          </div>
         </Link>
-      </nav>
-    </div>
-  </header>
-);
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-1.5">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="px-5 py-2.5 rounded-full text-sm font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all duration-200"
+            >
+              {link.label}
+            </a>
+          ))}
+          <Link
+            to="/"
+            className="ml-3 px-6 py-2.5 rounded-full text-sm font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-white transition-all duration-300"
+          >
+            Design 1
+          </Link>
+        </nav>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden p-2 rounded-lg text-d2-brown hover:bg-d2-warm/60 transition-colors"
+          onClick={() => setMobileOpen(!mobileOpen)}
+          aria-label="메뉴 열기"
+        >
+          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <nav className="md:hidden bg-white/95 backdrop-blur-xl border-t border-d2-warm px-6 py-4 space-y-1 shadow-lg">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileOpen(false)}
+              className="block px-4 py-3 rounded-xl text-base font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all"
+            >
+              {link.label}
+            </a>
+          ))}
+          <Link
+            to="/"
+            onClick={() => setMobileOpen(false)}
+            className="block px-4 py-3 rounded-xl text-base font-medium text-d2-gold border border-d2-gold/30 text-center hover:bg-d2-gold hover:text-white transition-all mt-2"
+          >
+            Design 1
+          </Link>
+        </nav>
+      )}
+    </header>
+  );
+};
 
 /* ───── Hero (Floral Banner) ───── */
 const D2Hero = () => (
