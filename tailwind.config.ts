@@ -18,6 +18,12 @@ export default {
         script: ['"Great Vibes"', 'cursive'],
       },
       colors: {
+        'd2-dark': '#0d0d0d',
+        'd2-darker': '#080808',
+        'd2-gold': '#c9a84c',
+        'd2-gold-light': '#dfc06a',
+        'd2-light': '#c8c4bc',
+        'd2-muted': '#7a7770',
         'footer-bg': 'hsl(var(--footer-bg))',
         'footer-foreground': 'hsl(var(--footer-foreground))',
         border: "hsl(var(--border))",

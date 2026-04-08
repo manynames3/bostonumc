@@ -19,9 +19,15 @@ const Header = () => {
           <a href="#worship" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
             예배안내
           </a>
+          <a href="#worship" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
+            예배안내
+          </a>
           <a href="#sermons" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
             설교
           </a>
+          <Link to="/design2" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
+            Design 2
+          </Link>
         </nav>
       </div>
     </header>
