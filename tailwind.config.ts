@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Noto Sans KR"', 'sans-serif'],
+        heading: ['"IBM Plex Sans KR"', 'sans-serif'],
         script: ['"Great Vibes"', 'cursive'],
       },
       colors: {
