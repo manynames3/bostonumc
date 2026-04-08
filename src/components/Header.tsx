@@ -22,7 +22,7 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
+          <a href="/worship" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
             예배안내
           </a>
           <a href="/sermons" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
