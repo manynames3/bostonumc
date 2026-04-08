@@ -323,7 +323,7 @@ const D2Worship = () => (
 
 /* ───── Sermons ───── */
 const D2Sermons = () => (
-  <section id="sermons" className="bg-d2-warm py-24 lg:py-32">
+  <section id="sermons" className="bg-d2-warm py-16 lg:py-24">
     <div className="max-w-6xl mx-auto px-6 lg:px-10">
       <FadeIn>
         <div className="text-center mb-16">
