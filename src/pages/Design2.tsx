@@ -197,80 +197,77 @@ const D2ScriptureBanner = () => (
 
 /* ───── Worship ───── */
 const D2Worship = () => (
-  <section id="worship" className="bg-d2-cream py-16 lg:py-24">
+  <section id="worship" className="bg-d2-cream py-12 lg:py-16">
     <div className="max-w-6xl mx-auto px-6 lg:px-10">
+      {/* Header with image */}
       <FadeIn>
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center mb-20">
-          <div className="lg:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center mb-10">
+          <div className="lg:w-5/12">
             <img src={churchBuilding} alt="교회 건물" className="w-full rounded-2xl shadow-xl" />
           </div>
-          <div className="lg:w-1/2 text-center lg:text-left">
-            <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">Service Information</p>
-            <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight">예배 안내</h2>
-            <div className="w-16 h-[2px] bg-d2-gold mt-6 mx-auto lg:mx-0" />
+          <div className="lg:w-7/12 text-center lg:text-left">
+            <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-3">Service Information</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-d2-dark tracking-tight">예배 안내</h2>
+            <div className="w-16 h-[2px] bg-d2-gold mt-4 mx-auto lg:mx-0" />
           </div>
         </div>
       </FadeIn>
 
-      {/* Service Cards */}
+      {/* Service Cards + Parking/Accessibility in one grid */}
       <FadeIn>
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 gap-5 mb-10">
           {/* English */}
-          <div className="group bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-3 h-3 rounded-full bg-d2-gold" />
-              <span className="text-d2-gold text-xs font-semibold tracking-[0.2em] uppercase">English Service</span>
+          <div className="bg-white rounded-xl p-6 shadow-sm border border-d2-tan/15 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-2.5 h-2.5 rounded-full bg-d2-gold" />
+              <span className="text-d2-gold text-[11px] font-semibold tracking-[0.2em] uppercase">English Service</span>
             </div>
-            <h3 className="text-d2-dark text-2xl font-bold mb-5">주일 영어 예배</h3>
-            <div className="space-y-3 text-d2-brown text-sm">
-              <p className="flex items-center gap-3"><Clock className="w-4 h-4 text-d2-gold" /> 오전 10:30 (매주 일요일)</p>
-              <p className="flex items-center gap-3"><MapPin className="w-4 h-4 text-d2-gold" /> 본당 Sanctuary</p>
+            <h3 className="text-d2-dark text-xl font-bold mb-3">주일 영어 예배</h3>
+            <div className="space-y-2 text-d2-brown text-sm">
+              <p className="flex items-center gap-2"><Clock className="w-4 h-4 text-d2-gold" /> 오전 10:30 (매주 일요일)</p>
+              <p className="flex items-center gap-2"><MapPin className="w-4 h-4 text-d2-gold" /> 본당 Sanctuary</p>
             </div>
           </div>
           {/* Korean */}
-          <div className="group bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-3 h-3 rounded-full bg-d2-gold" />
-              <span className="text-d2-gold text-xs font-semibold tracking-[0.2em] uppercase">Korean Worship</span>
+          <div className="bg-white rounded-xl p-6 shadow-sm border border-d2-tan/15 hover:shadow-lg transition-all duration-300">
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-2.5 h-2.5 rounded-full bg-d2-gold" />
+              <span className="text-d2-gold text-[11px] font-semibold tracking-[0.2em] uppercase">Korean Worship</span>
             </div>
-            <h3 className="text-d2-dark text-2xl font-bold mb-5">한국어 예배 (K-Worship)</h3>
-            <div className="space-y-3 text-d2-brown text-sm">
-              <p className="flex items-center gap-3"><Clock className="w-4 h-4 text-d2-gold" /> 오후 1:00 (매주 일요일)</p>
-              <p className="flex items-center gap-3"><MapPin className="w-4 h-4 text-d2-gold" /> 본당 Sanctuary</p>
+            <h3 className="text-d2-dark text-xl font-bold mb-3">한국어 예배 (K-Worship)</h3>
+            <div className="space-y-2 text-d2-brown text-sm">
+              <p className="flex items-center gap-2"><Clock className="w-4 h-4 text-d2-gold" /> 오후 1:00 (매주 일요일)</p>
+              <p className="flex items-center gap-2"><MapPin className="w-4 h-4 text-d2-gold" /> 본당 Sanctuary</p>
             </div>
             <a
               href="https://us06web.zoom.us/j/81766885232?pwd=dHhvWE92c0VIQ1hobVJpRS8zQVdlQT09#success"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 mt-6 bg-d2-gold/10 border border-d2-gold/30 text-d2-gold font-semibold text-sm px-6 py-3 rounded-full hover:bg-d2-gold hover:text-white transition-all duration-300"
+              className="inline-flex items-center gap-2 mt-4 bg-d2-gold/10 border border-d2-gold/30 text-d2-gold font-semibold text-xs px-5 py-2.5 rounded-full hover:bg-d2-gold hover:text-white transition-all duration-300"
             >
-              <Play className="w-4 h-4" /> 줌 생중계 참여하기 (Passcode: 3) <ExternalLink className="w-3.5 h-3.5" />
+              <Play className="w-3.5 h-3.5" /> 줌 생중계 참여하기 (Passcode: 3) <ExternalLink className="w-3 h-3" />
             </a>
           </div>
-        </div>
-      </FadeIn>
-
-      {/* Parking & Accessibility */}
-      <FadeIn>
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          <div className="flex gap-5 p-8 rounded-2xl bg-d2-warm border border-d2-tan/10">
-            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
-              <Car className="w-6 h-6 text-d2-gold" />
+          {/* Parking */}
+          <div className="flex gap-4 p-5 rounded-xl bg-d2-warm border border-d2-tan/10">
+            <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+              <Car className="w-5 h-5 text-d2-gold" />
             </div>
             <div>
-              <h4 className="text-d2-dark font-bold text-lg mb-2">주차 안내</h4>
-              <p className="text-d2-brown text-sm leading-relaxed">
+              <h4 className="text-d2-dark font-bold text-sm mb-1">주차 안내</h4>
+              <p className="text-d2-brown text-xs leading-relaxed">
                 Newton North High School 맞은편에 위치하며, 약 20대의 주차 공간이 마련되어 있습니다.
               </p>
             </div>
           </div>
-          <div className="flex gap-5 p-8 rounded-2xl bg-d2-warm border border-d2-tan/10">
-            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
-              <Accessibility className="w-6 h-6 text-d2-gold" />
+          {/* Accessibility */}
+          <div className="flex gap-4 p-5 rounded-xl bg-d2-warm border border-d2-tan/10">
+            <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+              <Accessibility className="w-5 h-5 text-d2-gold" />
             </div>
             <div>
-              <h4 className="text-d2-dark font-bold text-lg mb-2">휠체어 접근 가능</h4>
-              <p className="text-d2-brown text-sm leading-relaxed">
+              <h4 className="text-d2-dark font-bold text-sm mb-1">휠체어 접근 가능</h4>
+              <p className="text-d2-brown text-xs leading-relaxed">
                 교회에 경사로가 설치되어 있습니다. 모든 분들을 진심으로 환영합니다.
               </p>
             </div>
@@ -280,13 +277,13 @@ const D2Worship = () => (
 
       {/* Map & Directions */}
       <FadeIn>
-        <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-          <div className="lg:w-3/5 rounded-2xl overflow-hidden shadow-lg">
+        <div className="flex flex-col lg:flex-row gap-5 items-stretch">
+          <div className="lg:w-3/5 rounded-xl overflow-hidden shadow-lg">
             <iframe
               title="Church Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.5!2d-71.2088!3d42.3512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e382a3e3c7c8a7%3A0x1234567890abcdef!2s430+Walnut+St%2C+Newtonville%2C+MA+02460!5e0!3m2!1sen!2sus!4v1700000000000"
               width="100%"
-              height="350"
+              height="300"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
@@ -294,21 +291,21 @@ const D2Worship = () => (
             />
           </div>
           <div className="lg:w-2/5 flex flex-col justify-center">
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-d2-tan/10">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-d2-warm flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-d2-gold" />
+            <div className="bg-white rounded-xl p-7 shadow-sm border border-d2-tan/10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-9 h-9 rounded-lg bg-d2-warm flex items-center justify-center">
+                  <MapPin className="w-4 h-4 text-d2-gold" />
                 </div>
-                <h4 className="text-d2-dark font-bold text-lg">오시는 길</h4>
+                <h4 className="text-d2-dark font-bold">오시는 길</h4>
               </div>
-              <p className="text-d2-deep text-sm leading-relaxed mb-5">
+              <p className="text-d2-deep text-sm leading-relaxed mb-4">
                 430 Walnut St,<br />Newtonville, MA 02460
               </p>
               <a
                 href="https://maps.google.com/?q=430+Walnut+St+Newtonville+MA+02460"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-d2-gold text-white text-xs font-semibold px-6 py-3 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-sm"
+                className="inline-flex items-center gap-2 bg-d2-gold text-white text-xs font-semibold px-5 py-2.5 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-sm"
               >
                 Google Maps에서 보기 <ExternalLink className="w-3 h-3" />
               </a>
