@@ -390,10 +390,10 @@ const D2Contact = () => (
               <Clock className="w-7 h-7 text-d2-gold" />
             </div>
             <h4 className="text-d2-dark font-bold text-lg mb-3">Office Hours</h4>
-            <div className="text-d2-brown text-sm space-y-1">
-              <p>Tue - Thu</p>
-              <p>10-1 @ Church</p>
-              <p>2-4 @ Caffe Nero</p>
+            <div className="text-d2-brown text-sm space-y-2">
+              <p className="font-medium">Tue - Thu</p>
+              <p>10 - 1 @ the Church<br /><span className="text-xs opacity-75">430 Walnut St, Newtonville</span></p>
+              <p>2 - 4 @ Caffe Nero<br /><span className="text-xs opacity-75">28 Austin St, Newtonville</span></p>
             </div>
           </div>
         </div>
