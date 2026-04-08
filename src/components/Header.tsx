@@ -19,7 +19,6 @@ const Header = () => {
           <img src={logo} alt="보스톤 감리교회 로고" className="h-10 w-auto" />
           <div>
             <div className="font-bold text-foreground text-sm">보스톤 감리교회</div>
-            <div className="text-muted-foreground text-xs">Newton United Methodist Church</div>
           </div>
         </a>
 
