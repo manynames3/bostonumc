@@ -7,7 +7,7 @@ const HeroSection = () => {
         {/* Image */}
         <div className="lg:w-3/5 flex-shrink-0">
           <img
-            src={citySkyline}
+            src={churchBuilding}
             alt="City Skyline View"
             width={1920}
             height={1080}
