@@ -367,41 +367,41 @@ const D2Sermons = () => (
 
 /* ───── Contact ───── */
 const D2Contact = () => (
-  <section id="contact" className="bg-d2-cream py-24 lg:py-32">
-    <div className="max-w-6xl mx-auto px-6 lg:px-10">
+  <section id="contact" className="bg-d2-cream py-14 lg:py-20">
+    <div className="max-w-5xl mx-auto px-6 lg:px-10">
       <FadeIn>
-        <div className="text-center mb-20">
-          <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">Get in Touch</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight">연락처</h2>
-          <div className="w-16 h-[2px] bg-d2-gold mx-auto mt-6" />
+        <div className="text-center mb-10">
+          <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-3">Get in Touch</p>
+          <h2 className="text-2xl md:text-4xl font-bold text-d2-dark tracking-tight">연락처</h2>
+          <div className="w-12 h-[2px] bg-d2-gold mx-auto mt-4" />
         </div>
       </FadeIn>
       <FadeIn>
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center p-10 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
-            <div className="w-16 h-16 rounded-2xl bg-d2-warm flex items-center justify-center mx-auto mb-6">
-              <Mail className="w-7 h-7 text-d2-gold" />
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
+          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+            <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
+              <Mail className="w-5 h-5 text-d2-gold" />
             </div>
-            <h4 className="text-d2-dark font-bold text-lg mb-3">이메일</h4>
+            <h4 className="text-d2-dark font-bold text-base mb-2">이메일</h4>
             <a href="mailto:umc.newton@gmail.com" className="text-d2-brown text-sm hover:text-d2-gold transition-colors">
               umc.newton@gmail.com
             </a>
           </div>
-          <div className="text-center p-10 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
-            <div className="w-16 h-16 rounded-2xl bg-d2-warm flex items-center justify-center mx-auto mb-6">
-              <Phone className="w-7 h-7 text-d2-gold" />
+          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+            <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
+              <Phone className="w-5 h-5 text-d2-gold" />
             </div>
-            <h4 className="text-d2-dark font-bold text-lg mb-3">전화</h4>
+            <h4 className="text-d2-dark font-bold text-base mb-2">전화</h4>
             <a href="tel:617-244-0275" className="text-d2-brown text-sm hover:text-d2-gold transition-colors">
               617-244-0275
             </a>
           </div>
-          <div className="text-center p-10 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
-            <div className="w-16 h-16 rounded-2xl bg-d2-warm flex items-center justify-center mx-auto mb-6">
-              <Clock className="w-7 h-7 text-d2-gold" />
+          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+            <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
+              <Clock className="w-5 h-5 text-d2-gold" />
             </div>
-            <h4 className="text-d2-dark font-bold text-lg mb-3">Office Hours</h4>
-            <div className="text-d2-brown text-sm space-y-2">
+            <h4 className="text-d2-dark font-bold text-base mb-2">Office Hours</h4>
+            <div className="text-d2-brown text-sm space-y-1">
               <p className="font-medium">Tue - Thu</p>
               <p>10 - 1 @ the Church<br /><span className="text-xs opacity-75">430 Walnut St, Newtonville</span></p>
               <p>2 - 4 @ Caffe Nero<br /><span className="text-xs opacity-75">28 Austin St, Newtonville</span></p>
