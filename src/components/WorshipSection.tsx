@@ -109,7 +109,7 @@ const WorshipSection = () => {
                 <div className="inline-block bg-primary text-primary-foreground text-sm font-semibold px-4 py-2 rounded mb-4">
                   주소/Address
                 </div>
-                <p className="text-foreground">– 340 Walnut St, Newtonville, MA 02460</p>
+                <p className="text-foreground font-normal">430 Walnut St, Newtonville, MA 02460</p>
               </div>
             </div>
           </div>
