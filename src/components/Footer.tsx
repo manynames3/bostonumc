@@ -1,4 +1,4 @@
-import { Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,9 +6,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Logo */}
-          <div>
-            <div className="font-bold text-base">보스톤 감리교회</div>
-            <div className="text-xs opacity-75">Newton United Methodist Church</div>
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="보스톤 감리교회 로고" className="h-8 w-auto brightness-200" />
+            <div>
+              <div className="font-bold text-base">보스톤 감리교회</div>
+              <div className="text-xs opacity-75">Newton United Methodist Church</div>
+            </div>
           </div>
 
           {/* Address */}
