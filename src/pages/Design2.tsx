@@ -55,7 +55,7 @@ const D2Header = () => {
         <Link to="/design2" className="flex items-center gap-3 group">
           <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
           <div>
-            <span className="font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
+            <span className="font-heading font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
           </div>
         </Link>
 
@@ -417,7 +417,7 @@ const D2Footer = () => (
         <div className="flex items-center gap-4">
           <img src={logo} alt="로고" className="h-14 w-auto brightness-200" />
           <div>
-            <div className="font-bold text-d2-dark text-lg leading-tight">보스톤 감리교회</div>
+            <div className="font-heading font-bold text-d2-dark text-lg leading-tight">보스톤 감리교회</div>
             <div className="text-d2-tan text-xs tracking-wide mt-1">Newton United Methodist Church</div>
           </div>
         </div>
