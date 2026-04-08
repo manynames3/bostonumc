@@ -114,6 +114,41 @@ const WorshipSection = () => {
             </div>
           </div>
         </div>
+
+        {/* Contact & Office Hours */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-card rounded-lg border border-border p-6">
+            <h3 className="text-lg font-bold text-foreground mb-4">연락처 / Contact</h3>
+            <div className="space-y-3 text-sm">
+              <div className="flex items-center gap-3">
+                <span className="text-muted-foreground">이메일:</span>
+                <a href="mailto:umc.newton@gmail.com" className="text-primary hover:underline font-medium">
+                  umc.newton@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-muted-foreground">전화:</span>
+                <a href="tel:617-244-0275" className="text-foreground hover:text-primary font-medium">
+                  617 - 244 - 0275
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="bg-card rounded-lg border border-border p-6">
+            <h3 className="text-lg font-bold text-foreground mb-4">Office Hours</h3>
+            <div className="space-y-2 text-sm text-foreground">
+              <p>Tue - Thu</p>
+              <p>10 - 1 @ the church (430 Walnut St)</p>
+              <p>2 - 4 &nbsp;@ Caffe Nero (28 Austin St)</p>
+              <p>
+                Or{" "}
+                <a href="mailto:umc.newton@gmail.com" className="text-primary underline hover:opacity-80">
+                  by appointment
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
