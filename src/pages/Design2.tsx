@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import churchBuilding from "@/assets/church-building.jpg";
+import worshipBanner from "@/assets/worship-banner.jpg";
 import pastorFamily from "@/assets/pastor-family.png";
 import logo from "@/assets/logo.png";
-import { Mail, Phone, Clock, MapPin, Car, Accessibility, Play, ExternalLink, ChevronDown } from "lucide-react";
+import { Mail, Phone, Clock, MapPin, Car, Accessibility, Play, ExternalLink } from "lucide-react";
 
 /* ───── Fade-in on scroll ───── */
 const useFadeIn = () => {
@@ -73,43 +74,50 @@ const D2Header = () => (
   </header>
 );
 
-/* ───── Hero ───── */
+/* ───── Hero (Floral Banner) ───── */
 const D2Hero = () => (
-  <section className="relative h-screen min-h-[650px] flex items-center justify-center overflow-hidden">
-    <div className="absolute inset-0">
-      <img src={churchBuilding} alt="교회 건물" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-d2-cream" />
+  <section className="relative pt-[72px]">
+    <div className="relative w-full">
+      <img src={worshipBanner} alt="교회 예배안내 배너" className="w-full h-auto object-cover" />
     </div>
-    <div className="relative z-10 text-center px-6 max-w-3xl mx-auto mt-16">
-      <p className="text-white/90 font-medium tracking-[0.35em] uppercase text-xs mb-6 drop-shadow-lg">
-        Boston Korean United Methodist Church
-      </p>
-      <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-white leading-[1.08] tracking-tight mb-8 drop-shadow-xl" style={{ fontFamily: "'Noto Sans KR', sans-serif" }}>
-        보스톤
-        <br />
-        감리교회
-      </h1>
-      <p className="text-white/80 text-base md:text-lg leading-relaxed max-w-md mx-auto mb-10 drop-shadow-md">
-        매주 일요일, 현대 찬양과 전통 예배가 어우러진 은혜로운 시간에 여러분을 초대합니다.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="#worship"
-          className="inline-flex items-center justify-center bg-d2-gold text-white font-semibold text-sm px-10 py-4 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-lg hover:shadow-xl tracking-wide"
-        >
-          예배 안내 보기
-        </a>
-        <a
-          href="#about"
-          className="inline-flex items-center justify-center bg-white/90 text-d2-dark font-medium text-sm px-10 py-4 rounded-full hover:bg-white transition-all duration-300 shadow-lg tracking-wide"
-        >
-          교회 소개
-        </a>
+  </section>
+);
+
+/* ───── Church Building Section ───── */
+const D2ChurchBuilding = () => (
+  <section className="bg-d2-warm py-0">
+    <FadeIn>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-stretch">
+          <div className="lg:w-3/5">
+            <img src={churchBuilding} alt="교회 건물" className="w-full h-full object-cover" />
+          </div>
+          <div className="lg:w-2/5 bg-d2-cream flex items-center">
+            <div className="p-10 lg:p-16 space-y-6">
+              <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase">Our Church</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-d2-dark tracking-tight">Newton United Methodist Church</h2>
+              <p className="text-d2-brown text-sm leading-relaxed">
+                매주 일요일, 현대 찬양과 전통 예배가 어우러진 은혜로운 시간에 여러분을 초대합니다.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <a
+                  href="#worship"
+                  className="inline-flex items-center justify-center bg-d2-gold text-white font-semibold text-sm px-8 py-3.5 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-md tracking-wide"
+                >
+                  예배 안내
+                </a>
+                <a
+                  href="#about"
+                  className="inline-flex items-center justify-center border-2 border-d2-tan text-d2-dark font-medium text-sm px-8 py-3.5 rounded-full hover:bg-d2-warm transition-all duration-300 tracking-wide"
+                >
+                  교회 소개
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <a href="#about" className="absolute bottom-10 left-1/2 -translate-x-1/2 text-d2-brown/60 hover:text-d2-brown transition-colors animate-bounce">
-      <ChevronDown className="w-6 h-6" />
-    </a>
+    </FadeIn>
   </section>
 );
 
@@ -432,6 +440,7 @@ const Design2 = () => (
     <D2Header />
     <main>
       <D2Hero />
+      <D2ChurchBuilding />
       <D2About />
       <D2ScriptureBanner />
       <D2Worship />
