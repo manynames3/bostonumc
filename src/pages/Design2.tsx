@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import churchBuilding from "@/assets/church-building.jpg";
 import worshipBanner from "@/assets/worship-banner.jpg";
