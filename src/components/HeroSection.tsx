@@ -1,4 +1,4 @@
-import citySkyline from "@/assets/city-skyline.jpg";
+import churchBuilding from "@/assets/church-building.jpg";
 
 const HeroSection = () => {
   return (
