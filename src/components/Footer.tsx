@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <img src={logo} alt="보스톤 감리교회 로고" className="h-8 w-auto brightness-200" />
             <div>
-              <div className="font-bold text-base">보스톤 감리교회</div>
+              <div className="font-bold text-lg">보스톤 감리교회</div>
             </div>
           </div>
 
