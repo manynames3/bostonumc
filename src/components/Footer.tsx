@@ -10,7 +10,6 @@ const Footer = () => {
             <img src={logo} alt="보스톤 감리교회 로고" className="h-8 w-auto brightness-200" />
             <div>
               <div className="font-bold text-base">보스톤 감리교회</div>
-              <div className="text-xs opacity-75">Newton United Methodist Church</div>
             </div>
           </div>
 
