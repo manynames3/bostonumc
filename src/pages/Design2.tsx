@@ -198,7 +198,7 @@ const D2ScriptureBanner = () => (
 
 /* ───── Worship ───── */
 const D2Worship = () => (
-  <section id="worship" className="bg-d2-cream py-24 lg:py-32">
+  <section id="worship" className="bg-d2-cream py-16 lg:py-24">
     <div className="max-w-6xl mx-auto px-6 lg:px-10">
       <FadeIn>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center mb-20">
