@@ -406,7 +406,7 @@ const D2Contact = () => (
 const D2Footer = () => (
   <footer className="bg-d2-dark py-14">
     <div className="max-w-6xl mx-auto px-6 lg:px-10">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
         <div className="flex items-center gap-3">
           <img src={logo} alt="로고" className="h-8 w-auto brightness-200" />
           <div>
@@ -414,6 +414,21 @@ const D2Footer = () => (
             <div className="text-d2-tan text-xs tracking-wide">Newton United Methodist Church</div>
           </div>
         </div>
+        <div className="text-sm space-y-2">
+          <p className="text-white font-medium text-xs uppercase tracking-widest mb-2">Address</p>
+          <p className="text-d2-tan text-sm">430 Walnut St, Newtonville, MA 02460</p>
+        </div>
+        <div className="text-sm space-y-2">
+          <p className="text-white font-medium text-xs uppercase tracking-widest mb-2">Contact</p>
+          <p className="text-d2-tan text-sm">
+            <a href="tel:617-244-0275" className="hover:text-d2-gold transition-colors">617-244-0275</a>
+          </p>
+          <p className="text-d2-tan text-sm">
+            <a href="mailto:umc.newton@gmail.com" className="hover:text-d2-gold transition-colors">umc.newton@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-white/10">
         <div className="flex items-center gap-6">
           <a href="https://www.youtube.com/@BOSTONKOREANCHURCH" target="_blank" rel="noopener noreferrer" className="text-d2-tan hover:text-d2-gold transition-colors duration-300" aria-label="YouTube">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
@@ -425,7 +440,7 @@ const D2Footer = () => (
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
         </div>
-        <p className="text-d2-tan/60 text-xs">© 2026 보스톤 감리교회</p>
+        <p className="text-d2-tan/60 text-xs">© 2026 보스톤 감리교회. All rights reserved.</p>
       </div>
     </div>
   </footer>
