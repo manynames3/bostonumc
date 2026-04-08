@@ -1,3 +1,5 @@
+import { Car, Accessibility } from "lucide-react";
+
 const WorshipSection = () => {
   return (
     <section id="worship">
@@ -33,7 +35,21 @@ const WorshipSection = () => {
                   </td>
                 </tr>
                 <tr className="border-t border-border">
-                  <td className="py-4 px-4 text-foreground font-medium">주일 한국어 예배 [Korean Service]</td>
+                  <td className="py-4 px-4 text-foreground">
+                    <p className="font-medium">진보적인 한국인의 한국어 예배 (K-Worship)</p>
+                    <p className="text-muted-foreground mt-1">
+                      <a
+                        href="https://us06web.zoom.us/j/81766885232?pwd=dHhvWE92c0VIQ1hobVJpRS8zQVdlQT09#success"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        줌 예배 생중계를 원하시면 이 곳을 클릭해 주세요.
+                      </a>
+                      <br />
+                      Passcode는 "3" 입니다.
+                    </p>
+                  </td>
                   <td className="py-4 px-4 text-center text-muted-foreground">
                     오후 1 시 (주일)<br />1:00PM (SUNDAY)
                   </td>
@@ -43,6 +59,32 @@ const WorshipSection = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+
+        {/* Parking & Accessibility */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-card rounded-lg border border-border p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <Car className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-foreground">주차 안내</h3>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              뉴턴에서는 주차 공간을 찾기가 어렵습니다. 하지만 걱정하지 마세요! 저희 교회는 Newton North High School 맞은편에 위치해 있으며, 약 20대의 주차 공간이 마련되어 있습니다. 편하게 오세요!
+            </p>
+          </div>
+          <div className="bg-card rounded-lg border border-border p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <Accessibility className="w-5 h-5" />
+              </div>
+              <h3 className="text-lg font-bold text-foreground">휠체어 접근 가능</h3>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              교회에 경사로가 설치되어 있습니다. 엔지니어링 배경을 가진 4~6명의 교인이 직접 만들었습니다. 놀랍지 않나요? 당신도 멋진 분입니다. 저희가 당신을 알아가고 싶습니다!
+            </p>
           </div>
         </div>
 
