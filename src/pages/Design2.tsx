@@ -4,7 +4,7 @@ import churchBuilding from "@/assets/church-building.jpg";
 import worshipBanner from "@/assets/worship-banner.jpg";
 import pastorFamily from "@/assets/pastor-family.png";
 import logo from "@/assets/logo.png";
-import { Mail, Phone, Clock, MapPin, Car, Accessibility, Play, ExternalLink } from "lucide-react";
+import { Mail, Phone, Clock, MapPin, Car, Accessibility, Play, ExternalLink, Menu, X } from "lucide-react";
 
 /* ───── Fade-in on scroll ───── */
 const useFadeIn = () => {
