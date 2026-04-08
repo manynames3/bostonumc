@@ -13,7 +13,13 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Noto Sans KR"', 'sans-serif'],
+        script: ['"Great Vibes"', 'cursive'],
+      },
       colors: {
+        'footer-bg': 'hsl(var(--footer-bg))',
+        'footer-foreground': 'hsl(var(--footer-foreground))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
