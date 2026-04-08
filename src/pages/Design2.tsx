@@ -39,16 +39,13 @@ const FadeIn = ({ children, className = "", delay = "" }: { children: React.Reac
 
 /* ───── Header ───── */
 const D2Header = () => (
-  <header className="fixed top-0 w-full z-50 bg-d2-cream/90 backdrop-blur-xl border-b border-d2-tan/20">
-    <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-[72px]">
-      <Link to="/design2" className="flex items-center gap-3 group">
-        <img src={logo} alt="로고" className="h-9 w-auto group-hover:scale-105 transition-transform" />
-        <div>
-          <div className="font-semibold text-d2-dark text-sm tracking-wide">보스톤 감리교회</div>
-          <div className="text-d2-brown text-[11px] tracking-[0.15em] uppercase">Newton UMC</div>
-        </div>
+  <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+    <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16">
+      <Link to="/design2" className="flex items-center gap-2.5 group">
+        <img src={logo} alt="로고" className="h-8 w-auto group-hover:scale-105 transition-transform duration-300" />
+        <span className="font-bold text-d2-dark text-[15px] tracking-tight">보스톤 감리교회</span>
       </Link>
-      <nav className="hidden md:flex items-center gap-10">
+      <nav className="hidden md:flex items-center gap-1">
         {[
           { href: "#about", label: "소개" },
           { href: "#worship", label: "예배" },
@@ -58,14 +55,14 @@ const D2Header = () => (
           <a
             key={link.href}
             href={link.href}
-            className="text-d2-brown hover:text-d2-dark text-[13px] font-medium tracking-wide transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1.5px] after:bg-d2-gold after:transition-all after:duration-300 hover:after:w-full"
+            className="px-4 py-2 rounded-full text-[13px] font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all duration-200"
           >
             {link.label}
           </a>
         ))}
         <Link
           to="/"
-          className="text-d2-brown hover:text-d2-dark text-[13px] font-medium tracking-wide transition-colors duration-300"
+          className="ml-2 px-5 py-2 rounded-full text-[13px] font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-white transition-all duration-300"
         >
           Design 1
         </Link>
