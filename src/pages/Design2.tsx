@@ -376,20 +376,20 @@ const D2Contact = () => (
 const D2Footer = () => (
   <footer className="bg-d2-dark py-14">
     <div className="max-w-6xl mx-auto px-6 lg:px-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-        <div className="flex items-center gap-3">
-          <img src={logo} alt="로고" className="h-8 w-auto brightness-200" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10 items-start">
+        <div className="flex items-center gap-4">
+          <img src={logo} alt="로고" className="h-14 w-auto brightness-200" />
           <div>
-            <div className="font-semibold text-white text-sm">보스톤 감리교회</div>
-            <div className="text-d2-tan text-xs tracking-wide">Newton United Methodist Church</div>
+            <div className="font-bold text-white text-lg leading-tight">보스톤 감리교회</div>
+            <div className="text-d2-tan text-xs tracking-wide mt-1">Newton United Methodist Church</div>
           </div>
         </div>
-        <div className="text-sm space-y-2">
-          <p className="text-white font-medium text-xs uppercase tracking-widest mb-2">Address</p>
-          <p className="text-d2-tan text-sm">430 Walnut St, Newtonville, MA 02460</p>
+        <div className="space-y-2">
+          <p className="text-white font-medium text-xs uppercase tracking-widest mb-3">Address</p>
+          <p className="text-d2-tan text-sm leading-relaxed">430 Walnut St,<br />Newtonville, MA 02460</p>
         </div>
-        <div className="text-sm space-y-2">
-          <p className="text-white font-medium text-xs uppercase tracking-widest mb-2">Contact</p>
+        <div className="space-y-2">
+          <p className="text-white font-medium text-xs uppercase tracking-widest mb-3">Contact</p>
           <p className="text-d2-tan text-sm">
             <a href="tel:617-244-0275" className="hover:text-d2-gold transition-colors">617-244-0275</a>
           </p>
