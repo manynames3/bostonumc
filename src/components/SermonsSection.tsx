@@ -11,7 +11,7 @@ const SermonsSection = () => {
           href="https://www.youtube.com/@BOSTONKOREANCHURCH"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-accent text-accent-foreground text-sm font-semibold px-6 py-2.5 rounded hover:opacity-90 transition-opacity"
+          className="inline-block bg-accent text-accent-foreground text-sm font-semibold px-8 py-2.5 rounded hover:opacity-90 transition-opacity whitespace-nowrap"
         >
           유튜브 채널 바로가기
         </a>
