@@ -16,7 +16,7 @@ const Header = () => {
         <a href="/" className="flex items-center gap-2">
           <img src={logo} alt="보스톤 감리교회 로고" className="h-10 w-auto" />
           <div>
-            <div className="font-bold text-foreground text-sm">보스톤 감리교회</div>
+            <div className="font-bold text-foreground text-lg">보스톤 감리교회</div>
           </div>
         </a>
 
