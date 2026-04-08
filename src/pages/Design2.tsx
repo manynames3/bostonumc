@@ -40,12 +40,15 @@ const FadeIn = ({ children, className = "", delay = "" }: { children: React.Reac
 /* ───── Header ───── */
 const D2Header = () => (
   <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
-    <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-16">
-      <Link to="/design2" className="flex items-center gap-2.5 group">
-        <img src={logo} alt="로고" className="h-8 w-auto group-hover:scale-105 transition-transform duration-300" />
-        <span className="font-bold text-d2-dark text-[15px] tracking-tight">보스톤 감리교회</span>
+    <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 lg:h-24">
+      <Link to="/design2" className="flex items-center gap-3 group">
+        <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
+        <div>
+          <span className="font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
+          <span className="text-d2-brown/60 text-[11px] lg:text-xs tracking-wide hidden sm:block">Newton United Methodist Church</span>
+        </div>
       </Link>
-      <nav className="hidden md:flex items-center gap-1">
+      <nav className="hidden md:flex items-center gap-1.5">
         {[
           { href: "#about", label: "소개" },
           { href: "#worship", label: "예배" },
@@ -55,14 +58,14 @@ const D2Header = () => (
           <a
             key={link.href}
             href={link.href}
-            className="px-4 py-2 rounded-full text-[13px] font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all duration-200"
+            className="px-5 py-2.5 rounded-full text-sm font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all duration-200"
           >
             {link.label}
           </a>
         ))}
         <Link
           to="/"
-          className="ml-2 px-5 py-2 rounded-full text-[13px] font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-white transition-all duration-300"
+          className="ml-3 px-6 py-2.5 rounded-full text-sm font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-white transition-all duration-300"
         >
           Design 1
         </Link>
@@ -73,48 +76,10 @@ const D2Header = () => (
 
 /* ───── Hero (Floral Banner) ───── */
 const D2Hero = () => (
-  <section className="relative pt-[72px]">
+  <section className="relative pt-20 lg:pt-24">
     <div className="relative w-full">
       <img src={worshipBanner} alt="교회 예배안내 배너" className="w-full h-auto object-cover" />
     </div>
-  </section>
-);
-
-/* ───── Church Building Section ───── */
-const D2ChurchBuilding = () => (
-  <section className="bg-d2-warm py-0">
-    <FadeIn>
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-stretch">
-          <div className="lg:w-3/5">
-            <img src={churchBuilding} alt="교회 건물" className="w-full h-full object-cover" />
-          </div>
-          <div className="lg:w-2/5 bg-d2-cream flex items-center">
-            <div className="p-10 lg:p-16 space-y-6">
-              <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase">Our Church</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-d2-dark tracking-tight">Newton United Methodist Church</h2>
-              <p className="text-d2-brown text-sm leading-relaxed">
-                매주 일요일, 현대 찬양과 전통 예배가 어우러진 은혜로운 시간에 여러분을 초대합니다.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <a
-                  href="#worship"
-                  className="inline-flex items-center justify-center bg-d2-gold text-white font-semibold text-sm px-8 py-3.5 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-md tracking-wide"
-                >
-                  예배 안내
-                </a>
-                <a
-                  href="#about"
-                  className="inline-flex items-center justify-center border-2 border-d2-tan text-d2-dark font-medium text-sm px-8 py-3.5 rounded-full hover:bg-d2-warm transition-all duration-300 tracking-wide"
-                >
-                  교회 소개
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </FadeIn>
   </section>
 );
 
@@ -195,10 +160,15 @@ const D2Worship = () => (
   <section id="worship" className="bg-d2-cream py-24 lg:py-32">
     <div className="max-w-6xl mx-auto px-6 lg:px-10">
       <FadeIn>
-        <div className="text-center mb-20">
-          <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">Service Information</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight">예배 안내</h2>
-          <div className="w-16 h-[2px] bg-d2-gold mx-auto mt-6" />
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center mb-20">
+          <div className="lg:w-1/2">
+            <img src={churchBuilding} alt="교회 건물" className="w-full rounded-2xl shadow-xl" />
+          </div>
+          <div className="lg:w-1/2 text-center lg:text-left">
+            <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">Service Information</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight">예배 안내</h2>
+            <div className="w-16 h-[2px] bg-d2-gold mt-6 mx-auto lg:mx-0" />
+          </div>
         </div>
       </FadeIn>
 
