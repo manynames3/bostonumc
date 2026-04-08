@@ -56,7 +56,6 @@ const D2Header = () => {
           <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
           <div>
             <span className="font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
-            <span className="text-d2-brown/60 text-[11px] lg:text-xs tracking-wide hidden sm:block">Newton United Methodist Church</span>
           </div>
         </Link>
 
