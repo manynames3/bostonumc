@@ -55,7 +55,7 @@ const D2Header = () => {
         <Link to="/design2" className="flex items-center gap-3 group">
           <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
           <div>
-            <span className="font-bold text-white text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
+            <span className="font-bold text-d2-dark text-base lg:text-lg tracking-tight block">보스톤 감리교회</span>
           </div>
         </Link>
 
@@ -65,7 +65,7 @@ const D2Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="px-5 py-2.5 rounded-full text-sm font-medium text-d2-brown/80 hover:text-white hover:bg-d2-warm/60 transition-all duration-200"
+              className="px-5 py-2.5 rounded-full text-sm font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all duration-200"
             >
               {link.label}
             </a>
@@ -96,7 +96,7 @@ const D2Header = () => {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block px-4 py-3 rounded-xl text-base font-medium text-d2-brown/80 hover:text-white hover:bg-d2-warm/60 transition-all"
+              className="block px-4 py-3 rounded-xl text-base font-medium text-d2-brown/80 hover:text-d2-dark hover:bg-d2-warm/60 transition-all"
             >
               {link.label}
             </a>
@@ -130,7 +130,7 @@ const D2About = () => (
       <FadeIn>
         <div className="text-center mb-20">
           <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">About Our Pastor</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">담임목사 인사</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight">담임목사 인사</h2>
           <div className="w-16 h-[2px] bg-d2-gold mx-auto mt-6" />
         </div>
       </FadeIn>
@@ -206,7 +206,7 @@ const D2Worship = () => (
           </div>
           <div className="lg:w-1/2 text-center lg:text-left">
             <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">Service Information</p>
-            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">예배 안내</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight">예배 안내</h2>
             <div className="w-16 h-[2px] bg-d2-gold mt-6 mx-auto lg:mx-0" />
           </div>
         </div>
@@ -216,24 +216,24 @@ const D2Worship = () => (
       <FadeIn>
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {/* English */}
-          <div className="group bg-d2-warm rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
+          <div className="group bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-d2-gold" />
               <span className="text-d2-gold text-xs font-semibold tracking-[0.2em] uppercase">English Service</span>
             </div>
-            <h3 className="text-white text-2xl font-bold mb-5">주일 영어 예배</h3>
+            <h3 className="text-d2-dark text-2xl font-bold mb-5">주일 영어 예배</h3>
             <div className="space-y-3 text-d2-brown text-sm">
               <p className="flex items-center gap-3"><Clock className="w-4 h-4 text-d2-gold" /> 오전 10:30 (매주 일요일)</p>
               <p className="flex items-center gap-3"><MapPin className="w-4 h-4 text-d2-gold" /> 본당 Sanctuary</p>
             </div>
           </div>
           {/* Korean */}
-          <div className="group bg-d2-warm rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
+          <div className="group bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-d2-gold" />
               <span className="text-d2-gold text-xs font-semibold tracking-[0.2em] uppercase">Korean Worship</span>
             </div>
-            <h3 className="text-white text-2xl font-bold mb-5">한국어 예배 (K-Worship)</h3>
+            <h3 className="text-d2-dark text-2xl font-bold mb-5">한국어 예배 (K-Worship)</h3>
             <div className="space-y-3 text-d2-brown text-sm">
               <p className="flex items-center gap-3"><Clock className="w-4 h-4 text-d2-gold" /> 오후 1:00 (매주 일요일)</p>
               <p className="flex items-center gap-3"><MapPin className="w-4 h-4 text-d2-gold" /> 본당 Sanctuary</p>
@@ -254,22 +254,22 @@ const D2Worship = () => (
       <FadeIn>
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           <div className="flex gap-5 p-8 rounded-2xl bg-d2-warm border border-d2-tan/10">
-            <div className="w-14 h-14 rounded-2xl bg-d2-warm flex items-center justify-center flex-shrink-0 shadow-sm">
+            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
               <Car className="w-6 h-6 text-d2-gold" />
             </div>
             <div>
-              <h4 className="text-white font-bold text-lg mb-2">주차 안내</h4>
+              <h4 className="text-d2-dark font-bold text-lg mb-2">주차 안내</h4>
               <p className="text-d2-brown text-sm leading-relaxed">
                 Newton North High School 맞은편에 위치하며, 약 20대의 주차 공간이 마련되어 있습니다.
               </p>
             </div>
           </div>
           <div className="flex gap-5 p-8 rounded-2xl bg-d2-warm border border-d2-tan/10">
-            <div className="w-14 h-14 rounded-2xl bg-d2-warm flex items-center justify-center flex-shrink-0 shadow-sm">
+            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
               <Accessibility className="w-6 h-6 text-d2-gold" />
             </div>
             <div>
-              <h4 className="text-white font-bold text-lg mb-2">휠체어 접근 가능</h4>
+              <h4 className="text-d2-dark font-bold text-lg mb-2">휠체어 접근 가능</h4>
               <p className="text-d2-brown text-sm leading-relaxed">
                 교회에 경사로가 설치되어 있습니다. 모든 분들을 진심으로 환영합니다.
               </p>
@@ -294,12 +294,12 @@ const D2Worship = () => (
             />
           </div>
           <div className="lg:w-2/5 flex flex-col justify-center">
-            <div className="bg-d2-warm rounded-2xl p-10 shadow-sm border border-d2-tan/10">
+            <div className="bg-white rounded-2xl p-10 shadow-sm border border-d2-tan/10">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-d2-warm flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-d2-gold" />
                 </div>
-                <h4 className="text-white font-bold text-lg">오시는 길</h4>
+                <h4 className="text-d2-dark font-bold text-lg">오시는 길</h4>
               </div>
               <p className="text-d2-deep text-sm leading-relaxed mb-5">
                 430 Walnut St,<br />Newtonville, MA 02460
@@ -327,7 +327,7 @@ const D2Sermons = () => (
       <FadeIn>
         <div className="text-center mb-16">
           <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">Sermons</p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">설교</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-d2-dark tracking-tight mb-4">설교</h2>
           <div className="w-16 h-[2px] bg-d2-gold mx-auto mb-6" />
           <p className="text-d2-brown text-sm max-w-lg mx-auto leading-relaxed">
             최근 설교는 매주 업데이트 됩니다. 더 많은 설교들은 유튜브 채널에서 보실 수 있습니다.
@@ -371,13 +371,13 @@ const D2Contact = () => (
       <FadeIn>
         <div className="text-center mb-10">
           <p className="text-d2-gold text-xs font-semibold tracking-[0.3em] uppercase mb-3">Get in Touch</p>
-          <h2 className="text-2xl md:text-4xl font-bold text-white tracking-tight">연락처</h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-d2-dark tracking-tight">연락처</h2>
           <div className="w-12 h-[2px] bg-d2-gold mx-auto mt-4" />
         </div>
       </FadeIn>
       <FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
-          <div className="text-center p-6 rounded-2xl bg-d2-warm shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
             <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
               <Mail className="w-5 h-5 text-d2-gold" />
             </div>
@@ -386,7 +386,7 @@ const D2Contact = () => (
               umc.newton@gmail.com
             </a>
           </div>
-          <div className="text-center p-6 rounded-2xl bg-d2-warm shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
             <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
               <Phone className="w-5 h-5 text-d2-gold" />
             </div>
@@ -395,7 +395,7 @@ const D2Contact = () => (
               617-244-0275
             </a>
           </div>
-          <div className="text-center p-6 rounded-2xl bg-d2-warm shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
             <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
               <Clock className="w-5 h-5 text-d2-gold" />
             </div>
@@ -420,16 +420,16 @@ const D2Footer = () => (
         <div className="flex items-center gap-4">
           <img src={logo} alt="로고" className="h-14 w-auto brightness-200" />
           <div>
-            <div className="font-bold text-white text-lg leading-tight">보스톤 감리교회</div>
+            <div className="font-bold text-d2-dark text-lg leading-tight">보스톤 감리교회</div>
             <div className="text-d2-tan text-xs tracking-wide mt-1">Newton United Methodist Church</div>
           </div>
         </div>
         <div className="space-y-2">
-          <p className="text-white font-medium text-xs uppercase tracking-widest mb-3">Address</p>
+          <p className="text-d2-dark font-medium text-xs uppercase tracking-widest mb-3">Address</p>
           <p className="text-d2-tan text-sm leading-relaxed">430 Walnut St,<br />Newtonville, MA 02460</p>
         </div>
         <div className="space-y-2">
-          <p className="text-white font-medium text-xs uppercase tracking-widest mb-3">Contact</p>
+          <p className="text-d2-dark font-medium text-xs uppercase tracking-widest mb-3">Contact</p>
           <p className="text-d2-tan text-sm">
             <a href="tel:617-244-0275" className="hover:text-d2-gold transition-colors">617-244-0275</a>
           </p>
