@@ -50,7 +50,7 @@ const D2Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+    <header className="fixed top-0 w-full z-50 bg-d2-warm/90 backdrop-blur-2xl shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 lg:h-24">
         <Link to="/design2" className="flex items-center gap-3 group">
           <img src={logo} alt="로고" className="h-10 lg:h-12 w-auto group-hover:scale-105 transition-transform duration-300" />
@@ -72,7 +72,7 @@ const D2Header = () => {
           ))}
           <Link
             to="/"
-            className="ml-3 px-6 py-2.5 rounded-full text-sm font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-white transition-all duration-300"
+            className="ml-3 px-6 py-2.5 rounded-full text-sm font-medium text-d2-gold border border-d2-gold/30 hover:bg-d2-gold hover:text-d2-dark transition-all duration-300"
           >
             Design 1
           </Link>
@@ -90,7 +90,7 @@ const D2Header = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <nav className="md:hidden bg-white/95 backdrop-blur-xl border-t border-d2-warm px-6 py-4 space-y-1 shadow-lg">
+        <nav className="md:hidden bg-d2-warm/95 backdrop-blur-xl border-t border-d2-warm px-6 py-4 space-y-1 shadow-lg">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -104,7 +104,7 @@ const D2Header = () => {
           <Link
             to="/"
             onClick={() => setMobileOpen(false)}
-            className="block px-4 py-3 rounded-xl text-base font-medium text-d2-gold border border-d2-gold/30 text-center hover:bg-d2-gold hover:text-white transition-all mt-2"
+            className="block px-4 py-3 rounded-xl text-base font-medium text-d2-gold border border-d2-gold/30 text-center hover:bg-d2-gold hover:text-d2-dark transition-all mt-2"
           >
             Design 1
           </Link>
@@ -216,7 +216,7 @@ const D2Worship = () => (
       <FadeIn>
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {/* English */}
-          <div className="group bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
+          <div className="group bg-d2-warm rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-d2-gold" />
               <span className="text-d2-gold text-xs font-semibold tracking-[0.2em] uppercase">English Service</span>
@@ -228,7 +228,7 @@ const D2Worship = () => (
             </div>
           </div>
           {/* Korean */}
-          <div className="group bg-white rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
+          <div className="group bg-d2-warm rounded-2xl p-10 shadow-sm hover:shadow-xl border border-d2-tan/15 transition-all duration-500 hover:-translate-y-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-3 h-3 rounded-full bg-d2-gold" />
               <span className="text-d2-gold text-xs font-semibold tracking-[0.2em] uppercase">Korean Worship</span>
@@ -242,7 +242,7 @@ const D2Worship = () => (
               href="https://us06web.zoom.us/j/81766885232?pwd=dHhvWE92c0VIQ1hobVJpRS8zQVdlQT09#success"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 mt-6 bg-d2-gold/10 border border-d2-gold/30 text-d2-gold font-semibold text-sm px-6 py-3 rounded-full hover:bg-d2-gold hover:text-white transition-all duration-300"
+              className="inline-flex items-center gap-2.5 mt-6 bg-d2-gold/10 border border-d2-gold/30 text-d2-gold font-semibold text-sm px-6 py-3 rounded-full hover:bg-d2-gold hover:text-d2-dark transition-all duration-300"
             >
               <Play className="w-4 h-4" /> 줌 생중계 참여하기 (Passcode: 3) <ExternalLink className="w-3.5 h-3.5" />
             </a>
@@ -254,7 +254,7 @@ const D2Worship = () => (
       <FadeIn>
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           <div className="flex gap-5 p-8 rounded-2xl bg-d2-warm border border-d2-tan/10">
-            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+            <div className="w-14 h-14 rounded-2xl bg-d2-warm flex items-center justify-center flex-shrink-0 shadow-sm">
               <Car className="w-6 h-6 text-d2-gold" />
             </div>
             <div>
@@ -265,7 +265,7 @@ const D2Worship = () => (
             </div>
           </div>
           <div className="flex gap-5 p-8 rounded-2xl bg-d2-warm border border-d2-tan/10">
-            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+            <div className="w-14 h-14 rounded-2xl bg-d2-warm flex items-center justify-center flex-shrink-0 shadow-sm">
               <Accessibility className="w-6 h-6 text-d2-gold" />
             </div>
             <div>
@@ -294,7 +294,7 @@ const D2Worship = () => (
             />
           </div>
           <div className="lg:w-2/5 flex flex-col justify-center">
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-d2-tan/10">
+            <div className="bg-d2-warm rounded-2xl p-10 shadow-sm border border-d2-tan/10">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-xl bg-d2-warm flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-d2-gold" />
@@ -308,7 +308,7 @@ const D2Worship = () => (
                 href="https://maps.google.com/?q=430+Walnut+St+Newtonville+MA+02460"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-d2-gold text-white text-xs font-semibold px-6 py-3 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-sm"
+                className="inline-flex items-center gap-2 bg-d2-gold text-d2-dark text-xs font-semibold px-6 py-3 rounded-full hover:bg-d2-gold-light transition-all duration-300 shadow-sm"
               >
                 Google Maps에서 보기 <ExternalLink className="w-3 h-3" />
               </a>
@@ -353,7 +353,7 @@ const D2Sermons = () => (
             href="https://www.youtube.com/@BOSTONKOREANCHURCH"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-d2-dark text-white font-semibold text-sm px-10 py-4 rounded-full hover:bg-d2-deep transition-all duration-300 shadow-lg hover:shadow-xl tracking-wide"
+            className="inline-flex items-center gap-3 bg-d2-dark text-d2-dark font-semibold text-sm px-10 py-4 rounded-full hover:bg-d2-deep transition-all duration-300 shadow-lg hover:shadow-xl tracking-wide"
           >
             <Play className="w-4 h-4" />
             유튜브 채널 바로가기
@@ -377,7 +377,7 @@ const D2Contact = () => (
       </FadeIn>
       <FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
-          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+          <div className="text-center p-6 rounded-2xl bg-d2-warm shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
             <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
               <Mail className="w-5 h-5 text-d2-gold" />
             </div>
@@ -386,7 +386,7 @@ const D2Contact = () => (
               umc.newton@gmail.com
             </a>
           </div>
-          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+          <div className="text-center p-6 rounded-2xl bg-d2-warm shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
             <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
               <Phone className="w-5 h-5 text-d2-gold" />
             </div>
@@ -395,7 +395,7 @@ const D2Contact = () => (
               617-244-0275
             </a>
           </div>
-          <div className="text-center p-6 rounded-2xl bg-white shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
+          <div className="text-center p-6 rounded-2xl bg-d2-warm shadow-sm border border-d2-tan/10 hover:shadow-lg hover:-translate-y-1 transition-all duration-500">
             <div className="w-12 h-12 rounded-xl bg-d2-warm flex items-center justify-center mx-auto mb-4">
               <Clock className="w-5 h-5 text-d2-gold" />
             </div>
@@ -420,16 +420,16 @@ const D2Footer = () => (
         <div className="flex items-center gap-4">
           <img src={logo} alt="로고" className="h-14 w-auto brightness-200" />
           <div>
-            <div className="font-bold text-white text-lg leading-tight">보스톤 감리교회</div>
+            <div className="font-bold text-d2-dark text-lg leading-tight">보스톤 감리교회</div>
             <div className="text-d2-tan text-xs tracking-wide mt-1">Newton United Methodist Church</div>
           </div>
         </div>
         <div className="space-y-2">
-          <p className="text-white font-medium text-xs uppercase tracking-widest mb-3">Address</p>
+          <p className="text-d2-dark font-medium text-xs uppercase tracking-widest mb-3">Address</p>
           <p className="text-d2-tan text-sm leading-relaxed">430 Walnut St,<br />Newtonville, MA 02460</p>
         </div>
         <div className="space-y-2">
-          <p className="text-white font-medium text-xs uppercase tracking-widest mb-3">Contact</p>
+          <p className="text-d2-dark font-medium text-xs uppercase tracking-widest mb-3">Contact</p>
           <p className="text-d2-tan text-sm">
             <a href="tel:617-244-0275" className="hover:text-d2-gold transition-colors">617-244-0275</a>
           </p>
@@ -438,7 +438,7 @@ const D2Footer = () => (
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-white/10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-d2-tan/10">
         <div className="flex items-center gap-6">
           <a href="https://www.youtube.com/@BOSTONKOREANCHURCH" target="_blank" rel="noopener noreferrer" className="text-d2-tan hover:text-d2-gold transition-colors duration-300" aria-label="YouTube">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
