@@ -202,9 +202,9 @@ const D2Worship = () => (
               href="https://us06web.zoom.us/j/81766885232?pwd=dHhvWE92c0VIQ1hobVJpRS8zQVdlQT09#success"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-5 text-d2-gold text-xs font-semibold hover:text-d2-gold-light transition-colors"
+              className="inline-flex items-center gap-2.5 mt-6 bg-d2-gold/10 border border-d2-gold/30 text-d2-gold font-semibold text-sm px-6 py-3 rounded-full hover:bg-d2-gold hover:text-white transition-all duration-300"
             >
-              줌 생중계 참여하기 (Passcode: 3) <ExternalLink className="w-3 h-3" />
+              <Play className="w-4 h-4" /> 줌 생중계 참여하기 (Passcode: 3) <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
         </div>
